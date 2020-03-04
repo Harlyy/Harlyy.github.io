@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harly的个人主页</title>
+    <link rel="stylesheet" href="css/preload.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- loading(preload)页面   begin -->
+    <script>
+        $(document).ready(function(){
+        $('.btn').click(function(){
+        $('.loading').fadeOut()
+        });
+        $('.btn').click(function(){
+        $('.main').fadeIn();
+        });
+        });
+    </script>
+    <!-- loading(preload)页面    end -->
+    <!-- 刷新后返回页面顶部  begin -->
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- 刷新后返回页面顶部  end -->
+</head>
+<body>
+    
+    <div class="loading">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <!-- <div class="loading-btn">
+            <a href="#"><div class="loading-btn-content">👉进入我的世界👈<br><p class="loading-btn-en">Welcome to my world!</p></div></a>
+        </div> -->
+        <div class="btn-room">
+            <div class="btn">
+                <button class="button type1">
+                    <a href="#">👉进入我的世界👈<br>
+                        <p class="button-content-en">Welcome to my world!</p>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="nav-bar">
+
+            <div class="nav-logo">
+                <img src="img/head-img.jpg" class="nav-logo-img" width="40px" height="40px">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harly's Personal Website</p>
+            </div>
+
+        
+        <div class="nav-content">
+            <ul>
+                <li>
+                    <a href="#top">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#works">
+                        <i class="fa fa-folder-open" aria-hidden="true"></i>
+                        作品
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        关于我
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        联系我
+                    </a>                    
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="main" id="main">
+            <div class="h1-room">
+                <h1>Keep Exploring</h1>
+            </div>
+            <div class="h1-room">
+                <h1>Keep Loving</h1>
+            </div>
+            <div class="h1-room">
+                <h1>Keep Sharing</h1>
+            </div>
+            <div class="h1-room">
+                <h1>探索，热爱，分享</h1>
+            </div>
+            <div class="h1-room">
+                <h1>欢迎来到我的个人主页</h1>
+            </div>
+            <div class="h1-room">
+                <a href="#works">
+                    <div class="finger-room">
+                        <h1>👇</h1>
+                    </div>
+                </a>
+            </div>
+    </div>
+
+    <div class="works" id="works">
+        <div class="h1-room">
+            <h1>商业网站</h1>
+        </div>
+        <div class="h1-room">
+            <a href="http://www.sushiyanzui.cn/" target="_blank">
+                <div class="works-btn">苏氏控烟烟嘴</div>
+            </a>
+        </div>
+        <div class="h1-room">
+            <h1>&nbsp;</h1>
+        </div>
+        <div class="h1-room">
+            <h1>非商业网站</h1>
+        </div>
+        <div class="h1-room">
+            <p>(仅供娱乐或参考，无盈利性，如有侵权，我会立即删除)</p>
+        </div>
+        <div class="h1-room">
+            <a href="no-business/jj lin/JJ Lin.html" target="_blank">
+                <div class="works-btn">林俊杰中文信息网</div>
+            </a>
+            <a href="no-business/sue-prototype/index.html" target="_blank">
+                <div class="works-btn">苏氏控烟烟嘴官方网站初稿(基于Axure制作)</div>
+            </a>
+        </div>
+        <div class="h1-room">
+            <h1>&nbsp;</h1>
+        </div>
+        <div class="h1-room">
+            <h1>在线demo</h1>
+        </div>
+        <div class="h1-room">
+            <a href="demo/personal-resume/index.html" target="_blank">
+                <div class="works-btn">我的在线简历</div>
+            </a>
+            <a href="demo/star-sea/index.html" target="_blank">
+                <div class="works-btn">星辰大海</div>
+            </a>
+            <a href="demo/douyin/douyin.html" target="_blank">
+                <div class="works-btn">抖音风格文字</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="h1-room">
+            <h1>关于 Harly</h1>
+        </div>
+        <div class="about-content">
+            95后男青年，常以Harly为名活跃于各大网站
+        </div>
+        <div class="about-content">
+            爱探索，爱钻研，爱数码，爱运动，爱音乐，相信兴趣是最好的老师
+        </div>
+        <div class="about-content">
+            不断尝试把所想之物变为现实，不断尝试把所爱之物结合起来，不断尝试创造有趣的东西
+        </div>
+        <div class="about-content">
+            简简单单的代码也能创造精彩纷呈的世界
+        </div>
+        <div class="h1-room">
+            <a href="https://github.com/Harlyy" target="_blank">
+                <div class="about-btn">我的github主页</div>
+            </a>            
+            <a href="https://juejin.im/user/5e3b87ab518825493d6a7e10" target="_blank">
+                <div class="about-btn">我的掘金主页</div>
+            </a>
+            <a href="https://blog.csdn.net/Har1y" target="_blank">
+                <div class="about-btn">我的CSDN主页</div>
+            </a>
+            <a href="https://www.zhihu.com/people/gao-yuan-22-4" target="_blank">
+                <div class="about-btn">我的知乎主页</div>
+            </a>
+            <a href="demo/personal-resume/index.html" target="_blank">
+                <div class="about-btn">我的在线简历</div>
+            </a>
+        </div>
+        <div class="about-content">
+            如果你与我志趣相同，或者也是一名极客，不妨试试与我联系
+        </div>
+        <div class="h1-room">
+            <a href="#contact">
+                <div class="finger-room">
+                    <h1>👇</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="h1-room">
+            <h1>幸会 幸会</h1>
+        </div>
+        <div class="h1-room">
+            <a href="mailto:gy886ok@gmail.com" target="_blank">
+                <div class="contact-btn">邮箱：gy886ok@gmail.com</div>
+            </a> 
+        </div>
+        <div class="h1-room">
+            <a href="#contact" >
+                <div class="contact-btn">微信号：gy886ok</div>
+            </a> 
+        </div>
+        <div class="wechat-room">
+            <img src="img/wechat.jpg" id="wechat">
+        </div>
+        <div class="contact-content">
+            如果本网站对你有用，请任意打赏，你的打赏将会支持我坚持创作！
+        </div>
+        <div class="h1-room">
+                <div class="contact-btn">
+                    支付宝打赏   |  微 信 打 赏  <br>
+                    <img src="img/pay-alipay.png" alt="" srcset="" width="150px" height="150px">
+                    <img src="img/pay-wechat.png" alt="" srcset="" width="150px" height="150px">
+                </div>
+        </div>
+    </div>
+
+    <div class="footer-room">
+       <p>
+            Copyright ©2020  Designed by <a href="index.html">Harly</a>. 
+       </p>
+    </div>
+
+    <!-- move top -->
+    <div class="move-top text-right">
+        <a href="#top" class="move-top"> 
+            <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+        </a>
+    </div>
+    <!-- move top -->
+
+
+    <div class="stars"></div>
+    
+
+    <div class="msg">
+        <p>我们的征途 是星辰大海。<br>With the immeasurable code, into the immeasurable cosmos.</p></p>
+    </div>
+
+
+
+
+	<!-- <div class="wave waveAnimation">
+		<div class="waveInner bgTop">
+		<div class="wave waveTop" style="background-image: url('img/wavetop.png')"></div>
+		</div>
+		<div class="waveInner bgMiddle">
+		<div class="wave waveMiddle" style="background-image: url('img/wavemid.png')"></div>
+		</div>
+		<div class="waveInner bgBottom">
+		<div class="wave waveBottom" style="background-image: url('img/wavebot.png')"></div>
+		</div>
+	</div> -->
+
+
+
+
+	<script src='js/stopExecutionOnTimeout.js?t=1'></script>
+
+	<script>
+	$(document).ready(function () {
+	    var stars = 800;
+	    var $stars = $('.stars');
+	    var r = 800;
+	    for (var i = 0; i < stars; i++) {
+	        if (window.CP.shouldStopExecution(1)) {
+	            break;
+	        }
+	        var $star = $('<div/>').addClass('star');
+	        $stars.append($star);
+	    }
+	    window.CP.exitedLoop(1);
+	    $('.star').each(function () {
+	        var cur = $(this);
+	        var s = 0.2 + Math.random() * 1;
+	        var curR = r + Math.random() * 300;
+	        cur.css({
+	            transformOrigin: '0 0 ' + curR + 'px',
+	            transform: ' translate3d(0,0,-' + curR + 'px) rotateY(' + Math.random() * 360 + 'deg) rotateX(' + Math.random() * -50 + 'deg) scale(' + s + ',' + s + ')'
+	        });
+	    });
+	});
+
+	</script>
+
+</body>
+</html>
