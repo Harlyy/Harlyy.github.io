@@ -1,0 +1,175 @@
+  /* 
+    Designed By Harly        2020.03
+  */
+  
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: #000000 ;
+    margin-top: 0px;
+  }
+
+
+/* load页面动画 */
+  .loading {
+    display: flex;
+    animation-delay: 1s;
+  }
+
+  .loading .dot {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    margin: 0.8em;
+    border-radius: 50%;
+    margin-top: 300px;
+  }
+  .loading .dot::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    animation: wave 2s ease-out infinite;
+  }
+  .loading .dot:nth-child(1) {
+    background: #7ef9ff;
+  }
+  .loading .dot:nth-child(1)::before {
+    animation-delay: 0.2s;
+  }
+  .loading .dot:nth-child(2) {
+    background: #89cff0;
+  }
+  .loading .dot:nth-child(2)::before {
+    animation-delay: 0.4s;
+  }
+  .loading .dot:nth-child(3) {
+    background: #4682b4;
+  }
+  .loading .dot:nth-child(3)::before {
+    animation-delay: 0.6s;
+  }
+  .loading .dot:nth-child(4) {
+    background: #0f52ba;
+  }
+  .loading .dot:nth-child(4)::before {
+    animation-delay: 0.8s;
+  }
+  .loading .dot:nth-child(5) {
+    background: #000080;
+  }
+  .loading .dot:nth-child(5)::before {
+    animation-delay: 1s;
+  }
+  
+  @keyframes wave {
+    50%, 75% {
+      transform: scale(2.5);
+    }
+    80%, 100% {
+      opacity: 0;
+    }
+  }
+/* 下面是load页面的按钮 */
+  .btn-room{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  .loading .btn-room .btn .button.type1 {
+    position:relative;
+    padding:1em 1.5em;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+    outline:none;
+    font-size:20px;
+    margin:1em 0.8em;
+  } 
+
+
+  .loading .btn-room .btn .button.type1 .button-content-en  {
+    font-variant: small-caps;
+    font-size: 15px;
+  }
+  
+  .button.type1 {
+    color:#d9eeff;
+  }
+  .button.type1.type1::after,.button.type1.type1::before {
+    content:"";
+    display:block;
+    position:absolute;
+    width:20%;
+    height:20%;
+    border:2px solid;
+    transition:all 0.6s ease;
+    border-radius:2px;
+  }
+  .button.type1.type1::after {
+    bottom:0;
+    right:0;
+    border-top-color:transparent;
+    border-left-color:transparent;
+    border-bottom-color:#6fc1ff3d;
+    border-right-color:#6fc1ff3d;
+  }
+  .button.type1.type1::before {
+    top:0;
+    left:0;
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+    border-top-color:#6fc1ff3d;
+    border-left-color:#6fc1ff3d;
+  }
+  .button.type1.type1:hover:after,.button.type1.type1:hover:before {
+    border-bottom-color:#6fc1ff;
+    border-right-color:#6fc1ff;
+    border-top-color:#6fc1ff;
+    border-left-color:#6fc1ff;
+    width:100%;
+    height:100%;
+  }
+
+    /* .loading .loading-btn{
+    background-color: rgba(0, 0, 0);
+    width: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+  } */
+
+  /* .loading .loading-btn .loading-btn-content {
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    padding: 10px 100px;
+    z-index: 99999999;
+    border: solid white;
+    border-radius: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+
+  .loading .loading-btn .loading-btn-content .loading-btn-en{
+    font-variant: small-caps;
+    font-size: .6em;
+    line-height: .3em;
+  } */

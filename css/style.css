@@ -1,0 +1,338 @@
+  /* 
+    Designed By Harly        2020.03
+  */
+
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    background: linear-gradient(to top, #171724, #1f1f30 20%, #101018fb 40%, #000000);
+    /* background: linear-gradient(to top, #86377ba9, #27273cf6 20%, #101018fb 40%, #000000); */
+	/* background: linear-gradient(220% 105% at top center, #000000, #101018, #27273cd2, #86377b69); */
+	/* background-image: linear-gradient(to top, #86377b69, #27273cd2 20%, #101018 40%, #000000); */
+	background-attachment: fixed;
+	overflow: scroll;
+    z-index: -100;
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    width: 100px;
+}
+
+.main, .works, .about {
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    color: white;
+    z-index: 10;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    color: white;
+    z-index: 10;
+}
+
+.h1-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.finger-room{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border: white solid 2px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.about .about-content,
+.contact .contact-content{
+    width: 100%;
+    text-align: center;
+    line-height: 2.0em;
+    font-size: 1.2em;
+}
+
+.works .h1-room .works-btn,
+.about .h1-room .about-btn,
+.contact .h1-room .contact-btn{
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    border: solid white 2px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.works .h1-room .works-btn:hover, 
+.about .h1-room .about-btn:hover,
+.contact .h1-room .contact-btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.1em;
+    transition: .5s;
+}
+
+.contact .wechat-room #wechat{
+    width: 200px;
+    display: none;
+}
+
+.contact .h1-room .contact-btn:hover #wechat{
+    display: block;
+}
+
+
+/* 导航栏 navigation bagin */
+.nav-bar{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    text-shadow: black 4px 3px;
+}
+
+
+.nav-bar .nav-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+.nav-bar .nav-logo .nav-logo-img{
+    border: solid 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.nav-bar .nav-content{
+    width: 50%;
+    color:white;
+    font-size: 1.2em;
+    text-align: center;
+}
+/* 导航栏 navigation end */
+
+
+/* 背景效果 background bagin */
+
+
+  @keyframes star-move {
+	0% {
+	  transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+	}
+	100% {
+	  transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+	}
+  }
+
+
+  .stars {
+	transform: perspective(500px);
+	transform-style: preserve-3d;
+	position: absolute;
+	bottom: 0;
+	perspective-origin: 50% 100%;
+	left: 50%;
+	animation: star-move 150s infinite linear;
+	position: fixed;
+    z-index: -99;
+    
+  }
+
+  .star {
+	width: 2px;
+	height: 2px;
+	background: #F7F7B6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: 0 0 -300px;
+	transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+
+  /* @keyframes move_wave {
+    0% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+	position: fixed;
+    z-index: -98;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+} */
+
+/* 背景效果 background end */
+
+
+/* 右下角内容msg bagin */
+
+.msg{
+    position: fixed;
+    width: 40%;
+    /* left: 7.4%; */
+    bottom:10px; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 5;
+    color: rgba(220, 220, 220, 0.5);
+    line-height: 1.1em;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* 右下角内容msg end */
+
+
+/* footer begin */
+.footer-room{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: rgba(220, 220, 220, 0.5);
+    line-height: 1.1em;
+    font-size: 1.1em;
+    padding-bottom: .8%;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* footer end */
+
+
+/* move top begin */
+
+.move-top {
+    position: relative;
+}
+
+a.move-top {
+    text-align: center;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+}
+
+a.move-top span{
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border: transparent;
+    line-height: 2em;
+    background: #333;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+}
+/* move top end */
